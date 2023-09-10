@@ -10,14 +10,16 @@
 
 ### Setup
 
-0. Install Neovim
+0. Install git
+- brew install git
+1. Install Neovim
 - brew install neovim
-1. Setup nvim configuration file at ~/.config/nvim/. Use the kickstart nvim fork I have.
-2. Install tmux
+2. Setup nvim configuration file at ~/.config/nvim/. Use the kickstart nvim fork I have.
+3. Install tmux
 - brew install tmux
-3. Install tpm, the tmux plugin manager
+4. Install tpm, the tmux plugin manager
 - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-4. Setup tmux configuration file at ~/.config/tmux/tmux.conf. A copy of the configuration file is in this repo.
+5. Setup tmux configuration file at ~/.config/tmux/tmux.conf. A copy of the configuration file is in this repo.
 - Install tpm and the configurations for tmux by using the C-space + I command. That is C-Space then shift + i.
 
 
