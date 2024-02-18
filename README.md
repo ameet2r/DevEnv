@@ -33,3 +33,6 @@
 3. Run `docker ps` to get the `Container ID` for the container that was just stood up, copy that `Container ID`.
 4. Run `docker exec -it <Container ID> bash` to get onto that container and be able to run the code.
 
+#### Tearing down the Docker Environment
+1. If you are in the container, run the `exit` command to exit the container.
+2. Run `docker-compose down` to stop and kill the containers.
