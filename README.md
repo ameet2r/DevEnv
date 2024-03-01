@@ -23,6 +23,8 @@
 	- git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 6. Setup tmux configuration file at ~/.config/tmux/tmux.conf. A copy of the configuration file is in this repo.
 	- Install tpm and the configurations for tmux by using the C-space + I command. That is C-Space then shift + i.
+7. Install oh-my-zsh
+        - Follow instructions here: https://github.com/ohmyzsh/ohmyzsh/
 
 
 ### Workflow
