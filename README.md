@@ -25,6 +25,8 @@
 	- Install tpm and the configurations for tmux by using the C-space + I command. That is C-Space then shift + i.
 7. Install oh-my-zsh
 	- Follow instructions here: https://github.com/ohmyzsh/ohmyzsh/
+8. Install ripgrep (This is needed telescope live grep in neovim)
+   	- brew install ripgrep
 
 
 ### Workflow
