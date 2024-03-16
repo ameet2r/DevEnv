@@ -30,6 +30,10 @@
 
 
 ### Workflow
+### Creating Docker image
+If you do not have a docker image locally you will need to create one from the Dockerfile supplied before running the docker-compose commands.
+1. After copying down the `Dockerfile` run the following command in the same directory as the `Dockerfile`. `docker build . -t python_dev_env`.
+2. Once that command finishes building you can move onto the next section.
 
 #### Starting up Docker environment
 1. Make sure the `Dockerfile` and `compose.yaml` file are in the same folder where your source code is.
