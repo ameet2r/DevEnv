@@ -9,11 +9,14 @@
 # https://github.com/docker/awesome-compose
 services:
   app:
-    image: python
-    command: ["sleep", "infinity"]
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     working_dir: /app
     volumes:
       - ./:/app
+    container_name: python-dev-env
+    command: ["sleep", "infinity"]
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
 # start the database before your application. The `db-data` volume persists the

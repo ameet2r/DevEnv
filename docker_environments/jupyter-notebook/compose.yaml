@@ -1,0 +1,11 @@
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./work:/home/work
+    ports:
+      - 8888:8888
+    container_name: jupyter
+    command: "start-notebook.sh -NotebookApp.token="

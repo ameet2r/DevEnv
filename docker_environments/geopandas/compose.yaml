@@ -1,0 +1,9 @@
+services:
+  geopandas:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./work:/home/work
+    container_name: geopandas-dev-env
+    command: ["sleep", "infinity"]
