@@ -101,4 +101,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey -s ^f "~/Devenv/tmux-sessionizer\n"
-bindkey -s ^f "~/Devenv/cht.sh\n"
+bindkey -s ^q "~/Devenv/cht.sh\n"
