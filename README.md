@@ -7,6 +7,8 @@
 2. Neovim
 3. docker
 4. git
+5. fzf
+6. cht.sh
 
 ### Setup
 
@@ -27,6 +29,12 @@
 	- Follow instructions here: https://github.com/ohmyzsh/ohmyzsh/
 8. Install ripgrep (This is needed telescope live grep in neovim)
    	- `brew install ripgrep`
+9. Install fzf
+	- `brew install fzf`
+10. Install zsh-autosuggestions
+	- `brew install zsh-autosuggestions`
+11. Create a `~/Devenv` folder and copy in the tmux-sessionizer and cht.sh scripts
+12. Create a ~/.zshrc file if it does not exist, then replace it with the .zshrc in this repo
 
 
 ### Workflow
