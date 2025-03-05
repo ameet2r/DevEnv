@@ -27,12 +27,12 @@ RUN git clone https://github.com/ameet2r/DevEnv.git /tmp/DevEnv
 RUN cp -r /tmp/DevEnv/dotfiles/.??* /tmp/DevEnv/dotfiles/* /home
 
 WORKDIR /home
-RUN ["chmod", "+x", "/home/setup"]
+# RUN chmod +x setup.sh
 
 USER linuxbrew
 
 # TODO Execute my setup script
-RUN ["./setup"]
+# RUN ./setup.sh
 
 # Copy the source code into the container.
 COPY . .
