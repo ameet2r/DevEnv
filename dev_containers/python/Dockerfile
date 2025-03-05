@@ -25,13 +25,16 @@ RUN git clone https://github.com/ameet2r/kickstart.nvim.git /opt/nvim
 
 # Download my all my dotfiles and setup script
 RUN git clone https://github.com/ameet2r/DevEnv.git /tmp/DevEnv
-RUN cp -r /tmp/DevEnv/dotfiles/.??* /tmp/DevEnv/dotfiles/* /home
+RUN cp -r /tmp/DevEnv/dotfiles/.??* /tmp/DevEnv/dotfiles/* /home/linuxbrew
 
 USER linuxbrew
 WORKDIR /home
 
 # Execute my setup script
-RUN ./setup.sh
+RUN ./linuxbrew/setup.sh
+
+# Copy over nvim files to .config/nvim
+RUN cp -r /opt/nvim /home/linuxbrew/.config/
 
 # Copy the source code into the container.
 COPY . .
