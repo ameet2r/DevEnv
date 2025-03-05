@@ -12,7 +12,7 @@ RUN localedef -i en_US -f UTF-8 en_US.UTF-8
 RUN useradd -m -s /bin/bash linuxbrew && \
     echo 'linuxbrew ALL=(ALL) NOPASSWD:ALL' >>/etc/sudoers
 
-# Install Homebrew
+# Install Homebrew and oh-my-zsh
 USER linuxbrew
 RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
