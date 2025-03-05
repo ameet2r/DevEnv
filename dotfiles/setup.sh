@@ -27,6 +27,7 @@ done
 
 echo "All pacakges have been installed."
 
+source "$HOME"/.zshrc
 
 # TODO Install oh-my-zsh
 # TODO setup completions, if not already done by by .zshrc file

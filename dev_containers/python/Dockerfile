@@ -15,6 +15,7 @@ RUN useradd -m -s /bin/bash linuxbrew && \
 # Install Homebrew
 USER linuxbrew
 RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 USER root
 ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
