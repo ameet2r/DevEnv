@@ -10,7 +10,7 @@
 5. fzf
 6. cht.sh
 
-### Setup
+### Manual Setup on Laptop
 
 0. Install Homebrew
 	- Follow instructions from here: https://brew.sh
@@ -35,6 +35,9 @@
 	- `brew install zsh-autosuggestions`
 11. Create a `~/Devenv` folder and copy in the tmux-sessionizer and cht.sh scripts
 12. Create a ~/.zshrc file if it does not exist, then replace it with the .zshrc in this repo
+
+### Setup on Dev Container
+0. TODO
 
 
 ### Workflow
