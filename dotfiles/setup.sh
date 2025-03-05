@@ -17,6 +17,7 @@ packages=(
 	ripgrep
 	fzf
 	zsh-autosuggestions
+	neovim
 )
 
 for package in "${packages[@]}"; do

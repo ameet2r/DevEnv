@@ -26,13 +26,11 @@ RUN git clone https://github.com/ameet2r/kickstart.nvim.git /opt/nvim
 RUN git clone https://github.com/ameet2r/DevEnv.git /tmp/DevEnv
 RUN cp -r /tmp/DevEnv/dotfiles/.??* /tmp/DevEnv/dotfiles/* /home
 
-WORKDIR /home
-# RUN chmod +x setup.sh
-
 USER linuxbrew
+WORKDIR /home
 
-# TODO Execute my setup script
-# RUN ./setup.sh
+# Execute my setup script
+RUN ./setup.sh
 
 # Copy the source code into the container.
 COPY . .

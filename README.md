@@ -44,7 +44,7 @@
 ### Creating Docker image
 If you do not have a docker image locally you will need to create one from the Dockerfile supplied before running the docker-compose commands.
 1. After copying down the `Dockerfile` and the `compose.yaml` run the following command in the same directory as the `Dockerfile` and `compose.yaml`. 
-	- `docker-compose build`.
+	- `docker compose build --no-cache`
 2. Once that command finishes building you can move onto the next section.
 
 #### Starting up Docker environment
