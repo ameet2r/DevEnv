@@ -8,8 +8,8 @@ mkdir -p "$XDG_CONFIG_HOME"
 # Create symlinks for configurations
 ln -sF "opt/nvim" "$XDG_CONFIG_HOME"/nvim
 ln -sF "$PWD/tmux.conf" "$HOME"/tmux.conf
-ln -sF "$PWD/.vimrc" "$HOME"/.vimrc
-ln -sF "$PWD/.zshrc" "$HOME"/.zshrc
+# ln -sF "$PWD/.vimrc" "$HOME"/.vimrc
+# ln -sF "$PWD/.zshrc" "$HOME"/.zshrc
 
 # TODO maybe do something with cht.sh and tmux-sessionizer if needed
 
