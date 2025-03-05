@@ -12,7 +12,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    working_dir: /home
+    working_dir: /home/linuxbrew
     volumes:
       - ./:/app
     container_name: python-dev-container

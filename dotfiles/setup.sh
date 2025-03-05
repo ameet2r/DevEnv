@@ -21,6 +21,15 @@ done
 
 echo "All pacakges have been installed."
 
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+echo 'export LANG=en_US.utf8' >> ~/.zshrc
+echo 'export LC_ALL=en_US.utf8' >> ~/.zshrc
+echo 'export LC_CTYPE=en_US.utf8' >> ~/.zshrc
+source ~/.zshrc
+
 source "$HOME"/.zshrc
 
 echo "Setup complete."
