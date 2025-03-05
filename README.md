@@ -37,6 +37,7 @@
 12. Create a ~/.zshrc file if it does not exist, then replace it with the .zshrc in this repo
 
 ### Setup on Dev Container
+0. TODO
 
 
 ### Workflow
