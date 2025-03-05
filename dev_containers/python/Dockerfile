@@ -28,10 +28,10 @@ RUN git clone https://github.com/ameet2r/DevEnv.git /tmp/DevEnv
 RUN cp -r /tmp/DevEnv/dotfiles/.??* /tmp/DevEnv/dotfiles/* /home/linuxbrew
 
 USER linuxbrew
-WORKDIR /home
+WORKDIR /home/linuxbrew
 
 # Execute my setup script
-RUN ./linuxbrew/setup.sh
+RUN ./setup.sh
 
 # Copy over nvim files to .config/nvim
 RUN cp -r /opt/nvim /home/linuxbrew/.config/
