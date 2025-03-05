@@ -49,7 +49,7 @@ If you do not have a docker image locally you will need to create one from the D
 
 #### Starting up Docker environment
 1. Make sure the `Dockerfile` and `compose.yaml` file are in the same folder where your source code is.
-2. Run `docker-compose up -d` to start the containers
+2. Run `docker compose up -d` to start the containers
 3. Run `docker ps` to get the `Container ID` for the container that was just stood up, copy that `Container ID`.
 4. Run `docker exec -it <Container ID> bash` to get onto that container and be able to run the code.
 
