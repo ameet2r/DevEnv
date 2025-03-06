@@ -12,6 +12,7 @@ packages=(
 	fzf
 	zsh-autosuggestions
 	neovim
+	node
 )
 
 for package in "${packages[@]}"; do
