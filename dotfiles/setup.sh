@@ -20,7 +20,14 @@ for package in "${packages[@]}"; do
 	/home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
 
-echo "All pacakges have been installed."
+echo "All packages have been installed."
+
+echo "Updating nvim init.lua to change theme to always be dark mode"
+FILE="$HOME/.config/nvim/init.lua"
+OLD_WORD="tokyonight-day"
+NEW_WORD="tokyonight-night"
+sed -i "s/$OLD_WORD/$NEW_WORD/g" "$FILE"
+echo "Done updating nvim init.lua"
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
