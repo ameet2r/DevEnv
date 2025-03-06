@@ -23,7 +23,7 @@ done
 echo "All packages have been installed."
 
 echo "Updating nvim init.lua to change theme to always be dark mode"
-FILE="$HOME/.config/nvim/init.lua"
+FILE="/home/linuxbrew/.config/nvim/init.lua"
 OLD_WORD="tokyonight-day"
 NEW_WORD="tokyonight-night"
 sed -i "s/$OLD_WORD/$NEW_WORD/g" "$FILE"
