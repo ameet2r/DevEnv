@@ -9,6 +9,10 @@
 4. git
 5. fzf
 6. cht.sh
+7. ripgrep
+8. zsh-autosuggestions
+9. oh-my-zsh
+10. node
 
 ### Manual Setup on Laptop
 
