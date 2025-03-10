@@ -62,7 +62,7 @@ If you do not have a docker image locally you will need to create one from the D
 
 ### Setup on Dev Container
 0. Download Docker and git to your machine, git clone the project you want to work on.
-1. Pull down the `Dockerfile` and `compose.yaml` files into your project.
+1. Pull down the `Dockerfile`, `setup.sh` and `compose.yaml` files into your project.
 2. Follow the above Docker Workflow commands to build your docker image, and start and stop your docker container.
 3. Once in the docker dev environment, start nvim and let all nvim packages get installed.
 
