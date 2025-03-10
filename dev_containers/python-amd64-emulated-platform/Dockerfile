@@ -30,11 +30,12 @@ RUN cp -r /tmp/DevEnv/dotfiles/.??* /tmp/DevEnv/dotfiles/* /home/linuxbrew
 USER linuxbrew
 WORKDIR /home/linuxbrew
 
+# Copy the source code, setup.sh and other local files into the container.
+COPY . .
+
 # Execute my setup script
 RUN ./setup.sh
 
 # Copy over nvim files to .config/nvim
 RUN cp -r /opt/nvim /home/linuxbrew/.config/
 
-# Copy the source code into the container.
-COPY . .
